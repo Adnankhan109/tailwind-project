@@ -1,6 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client"
-
-
 import { useState } from 'react';
 
 export default function Home() {
@@ -15,10 +14,9 @@ export default function Home() {
 
           
           <button
-            className="relative w-8 h-8 flex flex-col  justify-between items-center md:hidden"
+            className="relative w-8 h-8 flex flex-col justify-between items-center md:hidden"
             onClick={() => setMenuOpen(!menuOpen)}
           >
-            
             <span
               className={`block h-1 w-8 bg-white rounded transition-transform duration-300 ${
                 menuOpen ? "rotate-45 translate-y-2.5" : ""
@@ -35,6 +33,7 @@ export default function Home() {
               }`}
             ></span>
           </button>
+
 
           
           <nav className="hidden md:flex space-x-4">
